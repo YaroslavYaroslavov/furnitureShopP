@@ -1,0 +1,170 @@
+.products
+    &_title
+        display: flex
+        justify-content: center
+        +bold 
+        margin-bottom: 32px
+    &__button
+        display: block
+        width: 245px
+        height: 48px
+        left: 60px
+        top: 415px
+        +med
+        font-size: 20px
+        color: $main-color
+        background-color: $white
+        border: 1px solid  $main-color
+        margin: auto
+        margin-bottom: 56px
+        &:hover
+            cursor: pointer
+        &:active
+            box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+        
+    &-elements
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__element
+            &-block
+                background-color: $product-color
+                position: relative
+                
+                margin-bottom: 32px
+                &-hover
+                    position: absolute
+                    top: 0px
+                    left: 0px
+                    opacity: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(58, 58, 58, 0.72)
+                    z-index: 100
+                    transition: 0.2s
+                    &:hover
+                        opacity: 1
+                &-button
+                    position: absolute
+                    z-index: 101
+                    height: 48px
+                    width: 202px
+                    top: 175px
+                    left: 42px
+                    opacity: 1
+                    +bold
+                    font-size: 16px
+                    color: $main-color
+                    border: none
+                    &:hover
+                        cursor: pointer
+                    &:active
+                        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                    &__icoshare
+                        margin-right: 11px
+                    &__icolike
+                        margin-right: 11px
+                &-buttons
+                    position: absolute
+                    top: 247px
+                    left: 58px
+                    display: flex
+                    align-items: center
+                    height: 24px
+                    width: 202px
+                    +bold
+                    font-size: 16px
+                    
+                &-buttonshare
+                    display: flex
+                    align-items: center
+                    background: none
+                    height: 24px
+                    border: none
+                    color: $white
+                    &:hover
+                        cursor: pointer
+                    &:active
+                        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                &-buttonlike
+                    display: flex
+                    align-items: center
+                    background: none
+                    height: 24px
+                    border: none
+                    color: $white
+                    &:hover
+                        cursor: pointer
+                    &:active
+                        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                
+                &-circlewrapper
+                    position: absolute
+                    top: 36px
+                    left: 218px
+                &__title
+                    +bold
+                    margin-top: 16px
+                    margin-left: 16px
+                    font-size: 24px
+                &__subtitle
+                    margin-top: 8px
+                    +reg
+                    font-size: 16px
+                    margin-left: 16px   
+                
+                &-cost
+                    +bold
+                    font-size: 20px
+                    display: flex
+                    margin-top: 8px
+                    margin-bottom: 30px
+                    margin-left: 16px   
+                &__costbefore
+                    text-decoration: line-through
+                    +reg
+                    margin-left: 16px
+                    font-size: 16px
+                &-sale
+                    height: 48px
+                    width: 48px
+                    background-color: $sale-color
+                    border-radius: 50%
+                    position: relative
+                    &__value
+                        position: absolute
+                        top: 12px
+                        left: 5px
+                        font-size: 16px
+                        line-height: 150%
+                        +med
+                        color: $white
+                        &-new
+                            position: absolute
+                            top: 12px
+                            left: 8px
+                            font-size: 16px
+                            line-height: 150%
+                            +med
+                            color: $white
+                &-new
+                    height: 48px
+                    width: 48px
+                    background-color: $new-color
+                    border-radius: 50%
+                    position: relative
+                &__img
+                    max-width: 100%
+                    max-height: 100%
+                    width: 285px
+                    height: 301px
+@media(max-width: 750px)
+    .products
+        &-elements
+            flex-direction: column
+            &__element
+                &-block
+                    width: 285px
+                    margin: auto
+                    margin-bottom: 20px
+

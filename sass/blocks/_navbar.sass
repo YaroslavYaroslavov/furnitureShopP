@@ -1,0 +1,377 @@
+@import '../_colors' 
+
+.wrapper    
+    margin-top: 100px
+    width: 714px
+    display: flex
+    justify-content: space-between
+    margin-left: 526px
+    margin-top: 68px
+    margin-bottom: 22px
+    align-items: center
+.topside
+    height: 100%
+    background: $topside-color
+    position: relative
+    overflow: hidden
+
+    &-slider
+        display: block 
+        margin-right: -300px
+        
+
+     
+        &-block
+            background: rgba(255, 255, 255, 0.52)
+            backdrop-filter: blur(15px)
+            position: absolute
+            width: 294px
+            height: 148px
+            left: 600px
+            top: 365px
+            z-index: 10
+            opacity: 0
+            transition: 1s
+            
+            &-wrapper
+                position: relative  
+            &__title
+                +med
+                position: absolute
+                font-size: 28px
+                top: 24px
+                left: 24px
+            &__subtitle
+                position: absolute
+                +reg
+                font-size: 16px
+                left: 24.75px
+                top: 62px
+            &-rp
+                position: absolute
+                display: flex
+                left: 24px
+                top: 94px
+                width: 80%
+                justify-content: space-between
+                align-items: center
+                &__rp
+                    +med
+                    font-size: 20px
+        &__img
+            height: 553px
+            width: 934px
+            
+        &__wrapper
+            position: relative
+            height: 553px
+            width: 934px
+            margin-right: 32px
+            margin-left: 32px
+    &-block
+        position: absolute
+        height: 553px   
+        width: 494px
+        
+        top: 141px
+        border-radius: 0px
+        background: rgba(255, 255, 255, 0.72)
+        z-index: 100
+        backdrop-filter: blur(7px)
+        
+        &__title
+            
+            width: 374px
+            height: 201px
+            margin-left: 60px
+            margin-top: 60px
+            +bold
+            font-size: 56px
+            line-height: 120%
+            color: $title-color
+        &__subtitle
+           
+            +med
+            width: 357px
+            height: 90px
+            margin-left: 60px
+            margin-top: 16px
+            color: $subtitle-color
+            line-height: 150%
+            font-size: 20px
+        &__button
+            
+            width: 374px
+            height: 78px
+            margin-left: 60px
+            margin-top: 48px
+            +med
+            font-size: 20px
+            color: $white
+            background-color: $main-color
+            border: none
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+    &-arrows
+        display: flex
+        justify-content: space-between
+        width: 104px
+        order: 2
+        
+        
+        &-left
+            height: 48px
+            width: 48px
+            background-color: $arrow-left
+            border-radius: 200px
+            position: relative
+            
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                
+            &__left
+                position: absolute
+                top: 16px
+                left: 17.5px
+        &-right
+            height: 48px
+            width: 48px
+            border-radius: 200px
+            background: $main-color
+            position: relative
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+            &__right
+                position: absolute
+                top: 16px
+                right: 18.5px
+
+.navbar
+    max-width: 100%
+    padding-top: 20px
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    &-search
+        position: relative
+        margin-right: 43px
+        &__ico
+            position: absolute
+            top: 15px
+            left: 15px
+    &__search
+        width: 429px
+        height: 40px
+        padding-left: 44px
+        border: none
+        +reg    
+    &-info
+        display: flex
+        width: 336px
+        justify-content: space-between
+        text-decoration: none
+        &__products
+            display: flex
+            text-decoration: none
+            color: #000 !important
+        &__rooms
+            display: flex
+            text-decoration: none
+            color: #000 !important
+        &__insp
+            text-decoration: none
+            color: #000 !important
+        
+        +med
+        &__arrow
+            margin-left: 8px
+    &__logo
+        +bold
+        font-size: 24px
+        
+    
+    &-profile
+        display: flex
+        width: 152px
+        height: 45px
+        align-items: center
+        justify-content: space-between
+        &__cart
+            width: 20px
+            height: 20px
+            border: none
+            background: none
+            padding: 0
+            &:hover
+                cursor: pointer 
+        &__iwant
+            width: 20px
+            height: 20px
+            border: none
+            background: none
+            padding: 0
+            &:hover
+                cursor: pointer 
+        &__profile
+            position: relative
+            height: 40px    
+            width: 40px 
+            background-color: $avatar-color
+            border-radius: 20px
+            border: none
+            padding: 0
+            &:hover
+                cursor: pointer
+        &__ico
+            position: absolute
+            top: 8px
+            left: 8px
+            max-height: 40px    
+            max-width: 40px 
+main .slick 
+        &-dots 
+            
+            margin-left: 526px  
+            // position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 120px
+            justify-content: space-between
+            top: 150px
+            padding: 0
+            // left: 740px
+        &-active div.topside-slider-block
+            opacity: 1
+
+
+        &-dots li
+            list-style: none
+
+        &-dots li.slick-active button
+            background-color: $main-color
+            box-shadow: 0 0 0 7px $activebutton, 0 0 0 8px $main-color
+        &-dots button
+            transition: 1s
+            padding: 5.5px
+            font-size: 0px
+            width: 1px
+            height: 1px
+            background-color: $tips-button-color
+            border-radius: 100000px       
+            border: none
+            &:hover
+                cursor: pointer
+
+@media(max-width: 1350px)
+    .navbar
+        &-info
+            flex-direction: column
+            width: 100px
+            margin-left: 10px
+            margin-right: 10px
+        &__search
+            width: 240px
+            height: 40px
+            padding-left: 44px
+            border: none
+            +reg    
+    .topside
+        &-slider
+            margin-right: 0px
+    .wrapper
+        width: 346px
+        margin-left: 404px
+    .topside
+        &-slider
+            &-block
+                left: 550px
+        &-block
+            width: 384px
+            &__title
+                margin-left: 20px
+                width: 344px
+            &__subtitle
+                margin-left: 20px
+            &__button 
+                margin-left: 20px
+                width: 344px
+@media(max-width: 750px)
+    .flex
+        display: flex
+        flex-direction: column-reverse
+        margin-top: 0px
+    .wrapper
+        width: 300px
+        margin-top: 5px
+        margin-left: 0px
+        margin: auto
+    .navbar
+        width: 300px
+        margin: auto
+        margin-bottom: 20px
+        &-search
+            display: none
+        &-info
+            display: none
+        &-profile
+            width: 100%
+            &__cart
+                display: none
+            &__iwant
+                display: none
+    .topside
+        height: 100%
+        background: $topside-color
+        position: relative
+        overflow: hidden
+        
+        &-dots
+            width: 120px
+            margin: auto
+        &-arrows 
+            position: absolute
+            width: 300px
+        &-slider
+            margin-top: 30px
+            margin-right: -633px
+            &__img
+                width: 300px
+                height: 184px
+        &-block
+            position: static
+
+            margin: auto
+            width: 300px
+            height: 100%
+            padding-top: 1px 
+            padding-bottom: 25px
+            &__title
+                width: 200px
+                height: 330px
+                margin-top: 20px
+                margin-left: 25px
+                
+            &__subtitle
+                display: none
+            &__button
+                width: 250px
+                margin-top: 40px
+                margin-left: 25px
+main .slick
+    &-dots
+        margin-left: 0
+            
+    
+
+     
+        
+            
+

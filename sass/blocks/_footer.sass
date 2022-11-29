@@ -1,0 +1,89 @@
+.strip
+    margin-top: 87px
+    border: 1px solid #D8D8D8
+.footer
+    &-footerflex
+        display: flex
+        margin-top: 100px
+        width: 100%
+        justify-content: space-between
+        padding-bottom: 58px
+    &-padding
+        padding-left: 12px
+        border: 0px
+        background-color: #F4F5F7
+        outline-style: none
+    &-margintop16px
+        margin-top: 16px
+    &-funiro
+        width: 249px    
+        &__description
+            +reg
+            font-size: 16px
+            line-height: 150%
+            margin-top: 16px
+        &-adress
+            margin-top: 16px
+            display: flex
+            &__ico
+                margin-right: 10px
+            &__adress
+                +reg
+        &-tel
+            margin-top: 16px    
+            display: flex
+            &__ico
+                margin-right: 10px
+            &__number
+                +reg    
+        &__www
+            margin-top: 16px
+            +reg
+    &-menu
+        +reg
+    &-account 
+        +reg
+    &-soc
+        +reg
+    &-mailing
+        &-input
+            +reg
+            display: flex
+            height: 45px
+            width: 242px
+            &-wrapper
+                height: 45px
+                width: 46px
+                background-color: $main-color
+                position: relative
+                border: none
+                margin-left: 4px
+                &:hover
+                    cursor: pointer
+                &:active
+                    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                &__ico
+                    position: absolute
+                    top: 14px
+                    left: 14px 
+@media(max-width: 1350px)
+    .footer
+        &-footerflex
+            flex-direction: column
+            align-items: center
+            text-align: center
+        &-funiro
+            text-align: center
+            align-items: center
+            margin-bottom: 10px
+            &-tel
+                justify-content: center
+            &-adress
+                justify-content: center
+        &-menu
+            margin-bottom: 10px
+        &-account   
+            margin-bottom: 10px
+        &-soc
+            margin-bottom: 16px
+

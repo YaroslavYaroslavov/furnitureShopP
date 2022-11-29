@@ -1,0 +1,198 @@
+@import '../_colors' 
+.inspiration .slick-slider
+        position: absolute
+        left: 39%
+.inspiration
+    background-color: $inspiration-color
+    display: flex
+    overflow: hidden
+    position: relative
+    
+    padding-bottom: 100px
+    height: 582px
+    &-text
+        width: 378px
+        
+        
+        
+        &__title
+            +bold
+            font-size: 40px
+            margin-bottom: 8px
+        &__subtitle
+            +med
+            margin-bottom: 32px
+            font-size: 16px
+        &__button
+            &:hover
+                cursor: pointer
+            &:active
+                box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+            width: 176px
+            height: 48px
+            left: 60px
+            top: 415px
+            +med
+            font-size: 16px
+            color: $white
+            background-color: $main-color
+            border: none
+            
+
+    
+    &-slider
+        
+        position: absolute
+        top: 44px
+        left: 0
+        &-block
+            position: absolute
+            top: 428px
+            left: 24px
+            opacity: 0
+            width: 217px
+            height: 130px
+            background: $blur
+            backdrop-filter: blur(3px)
+            transition: 1s
+            &__title
+                +bold
+                position: absolute
+                font-size: 28px
+                top: 64px
+                left: 32px
+            &__subtitle
+                position: absolute
+                font-size: 16px
+                +med
+                left: 32px
+                top: 32px
+            &-cross
+                position: absolute
+                top: 510px
+                width: 48px
+                height: 48px
+                left: 241px
+                background-color: $main-color
+                opacity: 0
+                &:hover
+                    cursor: pointer
+                &:active
+                    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+                &-wrap
+                    position: absolute
+                    top: 16px
+                    left: 14px
+        &-wrapper
+            position: relative
+            padding-right: 24px
+            transition: 1s
+        &-img
+           width: 372px
+           height: 486px
+           transition: 1s
+.inspiration .slick
+            &-active
+            &-active img.inspiration-slider-img
+                width: 404px
+                height: 582px
+                transition: 0.5s
+                
+            &-active div.inspiration-slider-wrapper
+                margin-right: 150px
+            &-active div.inspiration-slider-block
+                opacity: 1
+            &-active div.inspiration-slider-block-cross
+                opacity: 1
+.inspiration .slick 
+            &-dots 
+            &-dots li
+                list-style: none
+
+            &-dots li.slick-active button
+                background-color: $main-color
+                box-shadow: 0 0 0 7px $activebutton, 0 0 0 8px $main-color
+                
+                &:hover
+                    cursor: pointer
+            &-dots button
+                padding: 5.5px
+                font-size: 0px
+                width: 1px
+                height: 1px
+                background-color: $tips-button-color
+                border-radius: 100000px       
+                border: none
+                
+                &:hover
+                    cursor: pointer
+                
+.inspiration ul.slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 120px
+    justify-content: space-between
+    position: absolute
+    top: 500px
+    left: 397px
+    
+.inspiration button.slick-next
+    position: absolute
+    height: 48px
+    width: 48px
+    border-radius: 50%
+    top: 267px
+    left: 775px    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M1.00012 1L8.00012 8L1.00012 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: center
+    font-size: 0
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+    border: none
+    &:hover
+        cursor: pointer
+@media(max-width: 1350px)
+    .inspiration
+        height: 300px
+        padding-bottom: 0
+        &-text
+            position: static
+            text-align: center
+            width: 100%
+
+            &__title
+                width: 299px
+                margin: auto
+            &__subtitle
+                width: 299px
+                margin: auto
+            &__button
+                margin-top: 20px
+    .inspiration .slick-slider
+        display: none
+        
+
+@media(max-width: 750px)
+    .inspiration
+        display: flex    
+        flex-direction: column
+        height: 100%
+        &-text
+            position: static
+            text-align: center
+            width: 100%
+            padding-top: 20gpx
+            &__title
+                width: 299px
+                margin: auto
+            &__subtitle
+                width: 299px
+                margin: auto
+            &__button
+                margin-top: 20px
+                
+            
+    .inspiration .slick-slider
+        display: none
+                

@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url("../fonts/Gilroy-Light/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url("../fonts/Gilroy_Medium/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy_Medium/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy_Medium/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy_Medium/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url("../fonts/Gilroy-Bold/Gilroy-Bold.eot");
+  src: url("../fonts/Gilroy-Bold/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.feature {
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.feature-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-elements-element {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.feature-elements-element-text {
+  margin-left: 24px;
+}
+
+.feature-elements-element-text__title {
+  font-family: 'Gilroy Medium', sans-serif;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.feature-elements-element-text__subtitle {
+  font-family: 'Gilroy Light', sans-serif;
+  font-weight: 300;
+}
+/*# sourceMappingURL=feauture.css.map */

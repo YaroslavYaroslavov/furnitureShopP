@@ -1,0 +1,138 @@
+.tips
+    overflow: hidden
+    padding-bottom: 10px
+    &-title
+        +bold
+        display: flex
+        justify-content: center
+        font-size: 40px
+        margin-top: 48px
+        
+    &-slider
+        &-block
+            width: 391px
+            margin-left: 18px
+            margin-right: 18px
+            height: 370px
+            margin-top: 35px
+            margin-bottom: 35px
+            &-img
+                width: 391px
+                height: 251px
+            &-text
+                width: 340px
+                margin-top: 19px
+                margin-left: 16px
+            &-title
+                +bold
+                font-size: 24px
+                margin-bottom: 8px
+                
+            &-date
+                +reg
+                font-size: 14px
+.tips .slick
+    &-active .tips-slider-block
+        box-shadow: 0px 0px 7px 1px  #000000
+        transition: 0.5s
+    &-next
+        position: absolute
+        height: 48px
+        width: 48px
+        border-radius: 50%
+        top: 130px
+        left: 98%    
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M1.00012 1L8.00012 8L1.00012 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        background-repeat: no-repeat
+        background-position: center
+        font-size: 0
+        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+        border: none
+        &:hover
+            cursor: pointer
+    &-prev
+        position: absolute
+        height: 48px
+        width: 48px
+        border-radius: 50%
+        top: 130px
+        left: -2%
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3E%3Cpath d='M7.99992 1L0.999924 8L7.99992 15' stroke='%23E89F71' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        background-repeat: no-repeat
+        background-position: center
+        font-size: 0
+        box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16)
+        border: none
+        z-index: 100
+        &:hover
+            cursor: pointer
+       
+    &-dots li
+        list-style: none
+
+    &-dots li.slick-active button
+        background-color:  $main-color
+        box-shadow: 0 0 0 7px $white, 0 0 0 8px  $main-color        
+        &:hover
+            cursor: pointer
+                
+    &-dots button
+        padding: 5.5px
+        font-size: 0px
+        width: 1px
+        height: 1px
+        background-color: $tips-button-color
+        border-radius: 100000px       
+        border: none            
+        &:hover
+            cursor: pointer
+                
+.tips .slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 55px
+    width: 100px
+    justify-content: space-between
+    margin: auto
+    padding: 0
+
+@media(max-width: 750px)
+
+    .tips
+        &-slider
+            &-block
+                width: 295px
+                height: 100%
+                padding-bottom: 15px
+                &-img
+                    width: 295px
+                    height: 187px
+                &-title
+                
+                    width: 280px
+    .tips .slick-prev
+        opacity: 0
+    .tips .slick-next
+        opacity: 0
+@media(max-width: 1240px)
+    .tips
+        &-slider
+            margin: auto
+            width: 100%
+            &-block
+                width: 295px
+                height: 100%
+                padding-bottom: 15px
+                &-img
+                    width: 295px
+                    height: 187px
+                &-title
+                
+                    width: 280px
+    .tips .slick-prev
+        opacity: 0
+    .tips .slick-next
+        opacity: 0
+    
+    
